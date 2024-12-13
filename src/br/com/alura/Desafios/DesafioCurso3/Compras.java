@@ -54,7 +54,7 @@ public class Compras{
         //Ordenando a lista pelo valor inteiro.
         //pode utilizar nomeDaLista.sorte(nomeDaLista, new Comparator<NomeDaClasse>(){}
 
-        Collections.sort(listaDeCompras, new Comparator<ClasseCompras>() {
+        listaDeCompras.sort(new Comparator<ClasseCompras>() {
             @Override
             public int compare(ClasseCompras i1, ClasseCompras i2) {
                 return Integer.compare((int) i1.preco, (int) i2.preco);//cast de double p/ int - comprando pelo valor

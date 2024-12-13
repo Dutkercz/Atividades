@@ -1,6 +1,6 @@
 package br.com.alura.Desafios.DesafioCurso3;
 
-public class ClasseCompras {
+public class ClasseCompras implements Comparable<ClasseCompras> {
     String nome;
     double preco;
 
@@ -20,5 +20,10 @@ public class ClasseCompras {
     @Override
     public String toString() {
         return getNome() + " R$: "+getPreco();
+    }
+
+    @Override
+    public int compareTo(ClasseCompras outraCompra) {
+        return Double.valueOf(this.preco).compareTo(Double.valueOf(outraCompra.preco));
     }
 }
