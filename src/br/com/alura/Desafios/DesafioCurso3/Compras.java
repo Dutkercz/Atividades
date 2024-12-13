@@ -12,6 +12,7 @@ public class Compras{
         double limite = leitor.nextInt();
         System.out.println("Você informou o limite de :"+limite);
 
+        //Laço repetição.
         while (true){
             System.out.println("""
                     O que deseja fazer:\
@@ -47,12 +48,13 @@ public class Compras{
                 break;
             }
             else{
+                System.out.println("===============");
                 System.out.println("Opção Inválida!");
+                System.out.println("===============");
             }
 
         }
         //Ordenando a lista pelo valor inteiro.
-        //pode utilizar nomeDaLista.sorte(nomeDaLista, new Comparator<NomeDaClasse>(){}
 
         listaDeCompras.sort(new Comparator<ClasseCompras>() {
             @Override
@@ -60,6 +62,7 @@ public class Compras{
                 return Integer.compare((int) i1.preco, (int) i2.preco);//cast de double p/ int - comprando pelo valor
             }
         });
+        //Saida final.
         System.out.println("Sua Lista de compras");
         for (ClasseCompras listaDeCompra : listaDeCompras) {
             System.out.println("Produto:" + listaDeCompra);
