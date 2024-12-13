@@ -1,10 +1,10 @@
 package br.com.alura.Desafios.DesafioCurso3;
 
-public class Bagui {
+public class ClasseCompras {
     String nome;
     double preco;
 
-    public Bagui(String nome, double i) {
+    public ClasseCompras(String nome, double i) {
         this.nome = nome;
         this.preco = i;
     }
@@ -15,14 +15,6 @@ public class Bagui {
 
     public double getPreco() {
         return preco;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public void setPreco(double preco) {
-        this.preco = preco;
     }
 
     @Override
