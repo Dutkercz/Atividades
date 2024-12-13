@@ -1,8 +1,8 @@
 public class MMC {
     public static void main(String[] args) {
 
-        var a = 1;
-        var b = 2;
+        var a = 2;
+        var b = 1;
         int menor;
         int maior;
         int mdc = 0;
