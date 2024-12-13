@@ -1,11 +1,19 @@
+import java.util.Scanner;
+
 public class MMC {
     public static void main(String[] args) {
 
-        var a = 2;
+        var a = 1;
         var b = 1;
         int menor;
         int maior;
-        int mdc = 0;
+        int mdc = 1;
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Digite o 1° valor.");
+        a = scan.nextInt();
+        System.out.println("Digite o 2° valor.");
+        b = scan.nextInt();
 
         // calcular o menor numero
         if (a < b){
